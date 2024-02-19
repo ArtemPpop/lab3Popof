@@ -1,0 +1,44 @@
+﻿<Window x:Class="lab3Popof.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab3Popof"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Content="Сторона A:"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Name="txtSideA"/>
+        <Label Grid.Row="1" Grid.Column="0" Content="Сторона B:"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Name="txtSideB"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="Сторона C:"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Name="txtSideC"/>
+        <Label Grid.Row="3" Grid.Column="0" Content="Угол A:"/>
+        <TextBox Grid.Row="3" Grid.Column="1" Name="txtAngleA"/>
+        <Label Grid.Row="4" Grid.Column="0" Content="Угол B:"/>
+        <TextBox Grid.Row="4" Grid.Column="1" Name="txtAngleB"/>
+        <Label Grid.Row="5" Grid.Column="0" Content="Угол C:"/>
+        <TextBox Grid.Row="5" Grid.Column="1" Name="txtAngleC"/>
+        
+        
+        <Button Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Content="Рассчитать" Click="CalculateButton_Click"/>
+        <Label Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" Name="Result"/>
+
+    </Grid>
+</Window>
